@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);        
+      int n,d,t,sum=0,r;
+      n=s.nextInt();
+        t=n;
+         r=(int)Math.log10(n)+1;
+        while(n>0)
+        { 
+            d=n%10;
+            n=n/10;
+            if(r==3)
+            {
+                sum=sum+d*d*d;
+                }
+                else if(r==4) 
+                    {
+                    sum=sum+d*d*d*d;
+                    }
+                }
+            if(sum==t) 
+                System.out.println("Yes");
+
+            else
+                System.out.println("No");
+    }
+}
