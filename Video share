@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Videoshare {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+int x;
+    x=s.nextInt();
+    if(x>30 && x<50){
+        System.out.println("Average");
+    }else
+     if(x>51 && x<60){
+        System.out.println("Good");
+    }else
+     if(x>61 && x<80){
+        System.out.println("Excellent");
+    }else
+     if(x>81 && x<100){
+        System.out.println("Outsanding");
+    }else
+         System.out.println("Invalid Input");
+    }
+}
