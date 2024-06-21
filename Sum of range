@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Sor {
+
+    public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    int min,max;
+    min=s.nextInt();
+    max=s.nextInt();
+    int sum=0;
+    int i=min;
+    while(i<=max){
+    sum+=i;
+        i++;
+    }
+   System.out.printf("%d",sum);
+
+ }
+}
